@@ -1,0 +1,54 @@
+@import '../../index.scss';
+
+.container-filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    .container-text {
+        display: flex;
+        flex-direction: column;
+        font-family: "Open Sans";
+        color: #494E61;
+        .title {
+            font-size: 100%;
+            font-weight: 600;
+        }	
+        .no-servers {
+            font-size: 75%;
+        }
+    }
+    .search-filter{
+        position: relative;
+        .search-icon {
+            position: absolute;
+            top: 12px;
+            left: 15px;
+            height: 18px;
+            width: 18px;
+        }
+        input {
+            width: 200px;
+            border: 2px solid #D4D7E1;
+            border-radius: 25px;
+            background-color: #F2F3F6;
+            padding: 10px 5px 10px 50px;
+            color: #A9AEC1;
+            font-family: "Open Sans";		
+            font-weight: 600;
+            outline: 0;
+            &::placeholder{
+                color: #A9AEC1;
+                font-family: "Open Sans";	
+                font-size: 100%;	
+                font-weight: 600;
+            }
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .container-filters {
+            flex-direction: column;
+        }
+    }
+}

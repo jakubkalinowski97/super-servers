@@ -1,0 +1,6 @@
+export const GET_SERVERS = 'GET_SERVERS';
+export const GET_SERVER = 'GET_SERVER';
+export const TURN_ON_SERVER = 'TURN_ON_SERVER';
+export const TURN_OFF_SERVER = 'TURN_OFF_SERVER';
+export const REBOOT_SERVER = 'REBOOT_SERVER';
+export const SEARCH_SERVERS = 'SEARCH_SERVERS';

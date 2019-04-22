@@ -1,0 +1,63 @@
+@import '../../index.scss';
+
+tr{
+    border: none;
+    border: 2px solid #EDEDF0;
+}
+
+td {
+    text-align: left;
+    padding: 20px 40px;
+    color: #494E61;	
+    font-family: "Open Sans";
+    font-size: 65%;
+    font-weight: 600;
+}
+
+.name {
+    width: 25%;
+    min-width: 130px;
+    
+}
+
+.status {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.online {
+    color: #24A1A9;
+    &::before {
+        position: absolute;
+        content: '';
+        left: 25px;
+        height: 8px;
+        width: 8px;
+        background: #24A1A9;
+        border-radius: 50%;
+    }
+}
+.offline {
+    &::before {
+        position: absolute;
+        content: '\00d7';
+        font-size: 180%;
+        color: #EA5885;
+        left: 22px;
+    }
+}
+.rebooting {
+    color: #9CA7D3;
+    &::after{
+        content: '...'
+    }
+}
+
+.options {
+    position: relative;
+    .dropdown {
+        position: absolute;
+        right: 80px;
+    }
+}
